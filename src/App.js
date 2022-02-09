@@ -1,17 +1,13 @@
-import logo from './logo.png';
+import React, { PureComponent } from 'react';
 import './App.css';
+import Claculator from './components/Calculator';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Math Magician Project Setup
-        </p>
-      </header>
-    </div>
-  );
+export default class App extends PureComponent {
+  render() {
+    return (
+      <div>
+        <Claculator />
+      </div>
+    );
+  }
 }
-
-export default App;

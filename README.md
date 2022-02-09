@@ -4,7 +4,8 @@
 >- Make simple calculations.
 >- Read a random math-related quote.
 
-
+## Live Preview
+> [Web App Link](https://aime-math-magicians.netlify.app/)
 ## Built With
 - HTML & CSS & JavaScript
 - Html, Css & JavaScript linters
