@@ -15,10 +15,6 @@
   flex-wrap: wrap;
 }
 
-.App-Op-Pad .calculator-btn {
-  width: 100%;
-}
-
 .App-Num-Pad .calculator-btn,
 .App-Op-Pad .calculator-btn {
   width: 33.3333333333%;
@@ -28,6 +24,10 @@
   cursor: pointer;
   font-size: 1.5em;
   line-height: 50px;
+}
+
+.App-Op-Pad .calculator-btn {
+  width: 100%;
 }
 
 .App-Num-Pad .calculator-btn:active {
