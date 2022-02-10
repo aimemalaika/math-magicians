@@ -1,13 +1,14 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import './App.css';
-import Claculator from './components/Calculator';
+import Calculator from './components/Calculator';
 
-export default class App extends PureComponent {
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
   render() {
-    return (
-      <div>
-        <Claculator />
-      </div>
-    );
+    return (<Calculator />);
   }
 }
