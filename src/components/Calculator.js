@@ -28,7 +28,7 @@ const Calculator = () => {
     return <Button classList="calculator-btn" appender={buttonClick} value={digit.toString()} key={digit} />;
   });
 
-  const operatorPad = ['+', 'x', '-', '/', '='];
+  const operatorPad = ['+', 'x', '-', '÷', '='];
   const operatorPanel = operatorPad.map((operator) => <Button classList="calculator-btn btn-operators" appender={buttonClick} value={operator} key={operator} />);
 
   return (
