@@ -1,7 +1,7 @@
-import { useState } from 'react'; import Button from './Button';
-import Screen from './Screen';
-
-import calculate from '../logic/calculate';
+import { useState } from 'react'; import Button from './components/Button';
+import Screen from './components/Screen';
+import Header from './components/Header';
+import calculate from './logic/calculate';
 
 const Calculator = () => {
   const [total, setTotal] = useState(null);
@@ -32,17 +32,26 @@ const Calculator = () => {
   const operatorPanel = operatorPad.map((operator) => <Button classList="calculator-btn btn-operators" appender={buttonClick} value={operator} key={operator} />);
 
   return (
-    <div className="calculator">
-      <Screen total={total} next={next} operation={operation} />
-      <div className="App-wraper">
-        <div className="App-Num-Pad">
-          { digitPanel }
+    <div>
+      <Header />
+      <div className="calculator-container">
+        <div>
+          <h3>Les&lsquo;t do Math</h3>
         </div>
-        <div className="App-Op-Pad">
-          { operatorPanel }
+        <div className="calculator">
+          <Screen total={total} next={next} operation={operation} />
+          <div className="App-wraper">
+            <div className="App-Num-Pad">
+              { digitPanel }
+            </div>
+            <div className="App-Op-Pad">
+              { operatorPanel }
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
   );
 };
 
