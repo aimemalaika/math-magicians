@@ -1,6 +1,17 @@
+.calculator-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 80%;
+  margin: 60px auto;
+}
+
+.calculator-container h3 {
+  margin: 0;
+  font-size: 3em;
+}
+
 .calculator {
-  width: 35%;
-  margin: 10% auto;
+  width: 100%;
 }
 
 .App-wraper {
@@ -67,4 +78,54 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.pages-headers {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+}
+
+.pages-headers h1 {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 4em;
+}
+
+.pages-headers ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+}
+
+.pages-headers ul li {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  font-size: 1.5em;
+  height: 50px;
+  line-height: 50px;
+}
+
+.pages-headers ul li a {
+  text-decoration: none;
+}
+
+.homeContent {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+.homeContent h2 {
+  font-size: 2.3em;
+}
+
+.homeContent p {
+  font-size: 1.5em;
+  line-height: 2;
 }
